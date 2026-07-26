@@ -18,6 +18,7 @@ if (!response.ok) {
 
 let html = await response.text();
 html = html
+  .replaceAll("/assets/", "./assets/")
   .replaceAll('href="/', 'href="./')
   .replaceAll('src="/', 'src="./')
   .replaceAll(`${sourceUrl.replace(/\/$/, "")}/`, "./");

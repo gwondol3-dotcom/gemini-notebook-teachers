@@ -16,6 +16,12 @@ if (missing.length) {
 if (/(?:src|href)="\//.test(html)) {
   throw new Error("Root-relative asset reference remains");
 }
+if (/(?<!\.)\/assets\//.test(html)) {
+  throw new Error("Root-relative runtime asset reference remains");
+}
+if (!html.includes('import("./assets/')) {
+  throw new Error("Relative client runtime import is missing");
+}
 if (!html.includes("Gemini Notebook 교사 연수")) {
   throw new Error("Expected page content is missing");
 }

@@ -441,7 +441,7 @@ export default function Home() {
               </button>
               <a
                 className="button button-quiet"
-                href="/materials/gemini-notebook-training.pdf"
+                href="./materials/gemini-notebook-training.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1044,7 +1044,7 @@ export default function Home() {
             <p>교안, 프롬프트, 체크리스트를 열거나 인쇄할 수 있습니다.</p>
           </div>
           <div className="resource-grid">
-            <a href="/materials/gemini-notebook-training.pdf" target="_blank" rel="noreferrer">
+            <a href="./materials/gemini-notebook-training.pdf" target="_blank" rel="noreferrer">
               <span className="resource-type">PDF · 17쪽</span>
               <strong>Gemini Notebook 연수 원고</strong>
               <p>생성형 AI 시대의 교사 역할부터 실습과 검증까지</p>
