@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     "localhost:3000";
   const protocol =
     requestHeaders.get("x-forwarded-proto") ??
-    (host.startsWith("localhost") ? "http" : "https");
+    (host.startsWith("localhost") || host.startsWith("127.0.0.1") ? "http" : "https");
   const baseUrl = new URL(`${protocol}://${host}`);
 
   return {
@@ -22,13 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Gemini Notebook 교사 연수",
       description: "자료를 읽고, 근거를 확인하고, 수업과 업무에 연결하는 120분 실습",
       type: "website",
-      images: [{ url: "/og-colorful.png", width: 1728, height: 909, alt: "Gemini Notebook 교사 연수" }],
+      images: [{ url: "/og-simple.png", width: 2048, height: 1024, alt: "Gemini Notebook 교사 연수" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Gemini Notebook 교사 연수",
       description: "초·중·고 교사를 위한 120분 실습",
-      images: ["/og-colorful.png"],
+      images: ["/og-simple.png"],
     },
   };
 }
