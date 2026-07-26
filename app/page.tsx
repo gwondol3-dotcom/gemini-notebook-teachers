@@ -399,7 +399,18 @@ export default function Home() {
       </header>
 
       <main id="main">
-        <section id="overview" className="hero">
+        <section
+          id="overview"
+          className="hero bg-gradient-to-br from-violet-100 via-amber-50 to-cyan-100"
+        >
+          <div
+            className="hero-palette pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+            aria-hidden="true"
+          >
+            <span className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-pink-300/35 blur-3xl" />
+            <span className="absolute right-1/4 top-10 h-80 w-80 rounded-full bg-cyan-300/30 blur-3xl" />
+            <span className="absolute -right-24 bottom-10 h-96 w-96 rounded-full bg-violet-300/35 blur-3xl" />
+          </div>
           <div className="hero-copy">
             <span className="eyebrow">초·중·고 교사 · 120분 실습형 연수</span>
             <h1>
@@ -473,7 +484,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="prepare" className="section section-soft">
+        <section
+          id="prepare"
+          className="section section-soft bg-gradient-to-r from-rose-50 via-white to-amber-50"
+        >
           <div className="section-heading">
             <span className="section-number">00</span>
             <div>
@@ -523,7 +537,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="understanding" className="section">
+        <section
+          id="understanding"
+          className="section bg-gradient-to-b from-cyan-50 to-white"
+        >
           <div className="section-heading">
             <span className="section-number">01</span>
             <div>
@@ -631,7 +648,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="sources" className="section">
+        <section
+          id="sources"
+          className="section bg-gradient-to-br from-amber-50 via-white to-lime-50"
+        >
           <div className="split-heading">
             <div>
               <p className="kicker">SOURCE QUALITY</p>
@@ -795,7 +815,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="work" className="section">
+        <section
+          id="work"
+          className="section bg-gradient-to-br from-orange-50 via-white to-pink-50"
+        >
           <div className="section-heading">
             <span className="section-number">04</span>
             <div>
@@ -898,7 +921,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="practice" className="section">
+        <section
+          id="practice"
+          className="section bg-gradient-to-b from-sky-50 via-white to-violet-50"
+        >
           <div className="practice-header">
             <div className="section-heading">
               <span className="section-number">07</span>
@@ -1007,7 +1033,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="resources" className="section">
+        <section
+          id="resources"
+          className="section bg-gradient-to-br from-violet-50 via-white to-emerald-50"
+        >
           <div className="split-heading">
             <div>
               <p className="kicker">TAKE IT WITH YOU</p>

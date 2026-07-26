@@ -22,13 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Gemini Notebook 교사 연수",
       description: "자료를 읽고, 근거를 확인하고, 수업과 업무에 연결하는 120분 실습",
       type: "website",
-      images: [{ url: "/og.png", width: 1728, height: 909, alt: "Gemini Notebook 교사 연수" }],
+      images: [{ url: "/og-colorful.png", width: 1728, height: 909, alt: "Gemini Notebook 교사 연수" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Gemini Notebook 교사 연수",
       description: "초·중·고 교사를 위한 120분 실습",
-      images: ["/og.png"],
+      images: ["/og-colorful.png"],
     },
   };
 }
